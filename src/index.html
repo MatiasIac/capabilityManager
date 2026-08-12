@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Role and Capability Framework</title>
+<link rel="stylesheet" href="css/app.css">
+<link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+<div id="app-root"></div>
+
+<!-- Utils (no dependencies on other RCF namespaces) -->
+<script src="js/utils/ids.js"></script>
+<script src="js/utils/dom.js"></script>
+<script src="js/utils/calculations.js"></script>
+<script src="js/utils/importExport.js"></script>
+
+<!-- Core (Store/Router/etc. - depend on utils only) -->
+<script src="js/core/EventBus.js"></script>
+<script src="js/core/Validation.js"></script>
+<script src="js/core/Store.js"></script>
+<script src="js/core/Router.js"></script>
+<script src="js/core/Persistence.js"></script>
+<script src="js/core/UiState.js"></script>
+
+<!-- Demo seed data -->
+<script src="js/data/demoData.js"></script>
+
+<!-- Shared UI components -->
+<script src="js/components/Modal.js"></script>
+<script src="js/components/Toast.js"></script>
+<script src="js/components/Navigation.js"></script>
+
+<!-- Charts -->
+<script src="js/components/RadarChart.js"></script>
+<script src="js/components/Heatmap.js"></script>
+
+<!-- View components -->
+<script src="js/components/Dashboard.js"></script>
+<script src="js/components/LevelEditor.js"></script>
+<script src="js/components/DomainEditor.js"></script>
+<script src="js/components/CapabilityEditor.js"></script>
+<script src="js/components/FrameworkEditor.js"></script>
+<script src="js/components/CapabilityMap.js"></script>
+<script src="js/components/RoleProfileMatrix.js"></script>
+<script src="js/components/RoleStageEditor.js"></script>
+<script src="js/components/RoleFamilyEditor.js"></script>
+<script src="js/components/MappingEditor.js"></script>
+
+<!-- App shell (depends on Navigation + all view components) -->
+<script src="js/components/AppShell.js"></script>
+
+<!-- Bootstrap -->
+<script src="js/app.js"></script>
+</body>
+</html>
